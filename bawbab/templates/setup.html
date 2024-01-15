@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Verify - DAI{% endblock %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+{% block content %}
+
+    <div class="success-icon">
+       
+        <img src="{% static 'SuccessIcon.png' %}" alt="Success Checkmark">
+    </div>
+    <h2>Welcome, please continue to set up a location.</h2>
+    <button class="continue-button blue" onclick="continueSetup()">Continue</button>
+</div>
+{% endblock %}
+<script src="{% static 'script.js' %}"></script>

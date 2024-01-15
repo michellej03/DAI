@@ -1,0 +1,26 @@
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Verification Screen{% endblock %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+{% block content %}
+
+    <h2 >Verify</h2>
+    <p>Bawbab has sent a 6-digit verification code to the phone number you provided.
+         Please enter the code to verify your account and continue.</p>
+    <div class="verification-code-input" style="display: flex; justify-content: center; margin-top: 40px;">
+        <input type="text" pattern="\d{1}" maxlength="1" inputmode="numeric" placeholder="-" style="font-size: 2em; padding: 10px; width: 20px; text-align: center;" required>
+        <input type="text" pattern="\d{1}" maxlength="1" inputmode="numeric" placeholder="-" style="font-size: 2em; padding: 10px; width: 20px; text-align: center;" required>
+        <input type="text" pattern="\d{1}" maxlength="1" inputmode="numeric" placeholder="-" style="font-size: 2em; padding: 10px; width: 20px; text-align: center;" required>
+        <input type="text" pattern="\d{1}" maxlength="1" inputmode="numeric" placeholder="-" style="font-size: 2em; padding: 10px; width: 20px; text-align: center;" required>
+        <input type="text" pattern="\d{1}" maxlength="1" inputmode="numeric" placeholder="-" style="font-size: 2em; padding: 10px; width: 20px; text-align: center;" required>
+        <input type="text" pattern="\d{1}" maxlength="1" inputmode="numeric" placeholder="-" style="font-size: 2em; padding: 10px; width: 20px; text-align: center;" required>
+    </div>
+    <button class="continue-button blue" onclick="submitForm()">Continue</button>
+</div>
+{% endblock %}
+<script src="{% static 'script.js' %}"></script>
