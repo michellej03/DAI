@@ -20,7 +20,11 @@
         </ul>
     </nav>
 </header>
-
+<div class="progress-dots">
+    {% for step in steps %}
+        <div class="progress-dot {% if step == current_step %}active{% endif %}"></div>
+    {% endfor %}
+</div>
 {% block content %}{% endblock %}
 
 

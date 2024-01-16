@@ -58,7 +58,7 @@ p {
     color: #333 !important;
     font-size: 1.2em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* Menu Styles */
@@ -132,7 +132,7 @@ p {
     cursor: pointer;
     display: block;
     margin: 20px auto;
-    margin-top: 88px;
+    margin-top: 130px;
 }
 
 .continue-button:hover {
